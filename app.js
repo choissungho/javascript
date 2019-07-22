@@ -12,20 +12,36 @@ app.use(express.static('sunghoimg'))
 
 const path = require('path');
 const router = express.Router();
-
-
-
-router.get('/textadd', function (req, res) {
-    console.log(req.query);
-    res.send('제목 : ' + req.query.text1 + '  내용 : ' + req.query.text2 + '  날짜 : ' + req.query.text3 + '  작성자 : ' + req.query.text4  + '  <a href="/sh_notice">게시판_Go</a>')
-});
-
-
-
-router.get('/sh_ipad', function (req, res) {
-    res.sendFile(path.join(__dirname + '/Bootstrap_small_project/ipad.html'));
+router.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname + '/index.html'));
     //__dirname : It will resolve to your project folder.
 });
+
+
+
+
+router.get('/bj_intro', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin_javascript/intro.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
+router.get('/bj_output', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin_javascript/output.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/bj_wheretotag', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin_javascript/wheretotag.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_intro', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_07_22/01_intro.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
 
 
 
