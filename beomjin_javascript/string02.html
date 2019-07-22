@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <script>
+        var str = "Please locate where 'locate' occurs!"; // 변수 지정
+        var str02 = "Good!";
+        var concat = str02.concat(" ", str);
+        var str03 = " Hello World! ";
+        var trim = str03.trim();
+        var splitcommas = "aa,b, c,|d, e";
+        var splitspaces = "a,b, c,|d, e";
+        var splitsign = "as,b, c,|d, e";
+        var dd = splitcommas.split(","); // Split on commas
+        splitspaces.split(" "); // Split on spaces
+        splitsign.split(",");
+    </script>
+
+</head>
+
+<body>
+
+    txt.trim : <span id="demo07"></span><br> ...
+    txt.splitsign : <span id="demo09"></span><br>
+    <script>
+        document.getElementById("demo07").innerHTML = dd[0];
+        document.getElementById("demo08").innerHTML = splitspaces[1];
+        document.getElementById("demo09").innerHTML = splitsign[2];
+    </script>
+</body>
+
+</html>
