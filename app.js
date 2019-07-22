@@ -36,23 +36,41 @@ router.get('/bj_wheretotag', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+
+
+// --------------------------------------------------------------------------------------------------------------------------------------------
 router.get('/sh_intro', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho_07_22/01_intro.html'));
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/sh_output', function (req, res) {
+router.get('/sh_wheretotag', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho_07_22/02_Where_To_script_Tag.html'));
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/sh_wheretotag', function (req, res) {
+router.get('/sh_output_display', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho_07_22/03_Output Disply.html'));
     //__dirname : It will resolve to your project folder.
 });
 
 router.get('/sh_output', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho_07_22/04_output.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_switch', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_05_switch.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_string01', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_06_string01.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_string02', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_07_string02.html'));
     //__dirname : It will resolve to your project folder.
 });
 
