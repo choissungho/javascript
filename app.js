@@ -99,17 +99,52 @@ router.get('/sh_output', function (req, res) {
 });
 
 router.get('/sh_switch', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho_05_switch.html'));
+    res.sendFile(path.join(__dirname + '/sungho_07_22/05_switch.html'));
     //__dirname : It will resolve to your project folder.
 });
 
 router.get('/sh_string01', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho_06_string01.html'));
+    res.sendFile(path.join(__dirname + '/sungho_07_22/06_string01.html'));
     //__dirname : It will resolve to your project folder.
 });
 
 router.get('/sh_string02', function (req, res) {
-    res.sendFile(path.join(__dirname + '/sungho_07_string02.html'));
+    res.sendFile(path.join(__dirname + '/sungho_07_22/07_string02.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_date', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0723/01_date.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_structure', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0723/02_structure.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_call_with_function', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0723/03_call_with_function.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_Variable', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0723/04_Variable.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_arrays', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0723/05_arrays.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_object', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0723/06_object.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_keyword', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0723/07_keyword.html'));
     //__dirname : It will resolve to your project folder.
 });
 

@@ -12,9 +12,13 @@
         var sen1 = sentence.split(' ');
         var sen2 = sentence.split(',');
         var sen3 = sentence.split(',');
+<<<<<<< HEAD
         var name = "name";
         var sam = "Sam"
         var res11 = sentence.substring(0,1);
+=======
+        var res11 = sentence.substring(0, 1);
+>>>>>>> 6aa27f0f9ffbb16eeaadd320908d7e8d772519b4
         var rep = str.replace("locate", "domastic");
     </script>
 </head>
@@ -22,16 +26,21 @@
 <body>
     출력: <span id="demo1"></span><br>
     출력: <span id="demo2"></span><br>
-    
+
     출력: <span id="demo3"></span><br>
     출력: <span id="demo4"></span><br>
 
     <script>
         document.getElementById("demo1").innerHTML = sen1[0];
         document.getElementById("demo2").innerHTML = sen2[1];
+<<<<<<< HEAD
 
         document.getElementById("demo3").innerHTML = cum("Hi, my name is Sam!","name");// sentence.substr(sentence.indexOf(name),name.length);
         document.getElementById("demo4").innerHTML = sentence.substr(sentence.indexOf(sam),sam.length);
+=======
+        document.getElementById("demo3").innerHTML = sentence.substr(sentence.indexOf("name"), 4);
+        document.getElementById("demo4").innerHTML = sentence.substr(sentence.indexOf("Sam"), 3);
+>>>>>>> 6aa27f0f9ffbb16eeaadd320908d7e8d772519b4
 
     </script>
 
