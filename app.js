@@ -25,9 +25,14 @@ router.get('/bj_intro', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/bj_output_display', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin_javascript/output.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 
 router.get('/bj_output', function (req, res) {
-    res.sendFile(path.join(__dirname + '/beomjin_javascript/output.html'));
+    res.sendFile(path.join(__dirname + '/beomjin_javascript/output_display.html'));
     //__dirname : It will resolve to your project folder.
 });
 
@@ -35,6 +40,40 @@ router.get('/bj_wheretotag', function (req, res) {
     res.sendFile(path.join(__dirname + '/beomjin_javascript/wheretotag.html'));
     //__dirname : It will resolve to your project folder.
 });
+
+router.get('/bj_switch', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin_javascript/switch.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
+router.get('/bj_string1', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin_javascript/string01.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/bj_string2', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin_javascript/string02.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/bj_date', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin_javascript/date.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
+router.get('/bj_structure', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin_javascript/structure.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/bj_function', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin_javascript/function.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
 
 
 

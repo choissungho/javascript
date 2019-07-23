@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <script>
+        var getElement = function (param) {
+            var innerParam = param;
+            alert(innerParam.value);
+            var docForm = document.customForm;
+            alert(docForm.value);
+        }
+    </script>
+</head>
+
+<body>
+
+    <FORM NAME="customForm" ACTION="" METHOD="POST">
+        Enter something in the box: <BR>
+        <INPUT TYPE="text" NAME="inputbox" VALUE="Good" onclick="getElement(this)">
+
+        <INPUT TYPE="button" NAME="button" Value="ClickButton" onclick="getElement(this)">
+
+
+    </FORM>
+
+</body>
+
+</html>

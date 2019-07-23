@@ -1,0 +1,25 @@
+<html>
+
+<head></head>
+
+<body>
+    <p id="demo01"></p>
+    <p id="demo02"></p>
+
+    <script>
+        var person01 = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+        var x = person01.constructor();
+        x.age=10;
+        var person02 = {firstName:"dd", lastName:"Doe", 
+        fullName:function(firstVal, secondVal) {
+            return this.firstName + " " + firstVal + " " +secondVal;
+        }
+    };
+   
+    document.getElementById("demo01").innerHTML = person01.firstName + " is " + person01.age + " years old";
+    person02.nationality = "Korean";
+    document.getElementById("demo02").innerHTML = person02.firstName + " " + person02["nationality"];
+    </script>
+</body>
+
+</html>
