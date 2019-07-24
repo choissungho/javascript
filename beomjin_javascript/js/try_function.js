@@ -1,15 +1,20 @@
-function f_compare(a, b) {
+function f_compare(a,b) {
+    this.a = a;
+    this.b = b;
+    
     var result = document.getElementById("compare_output");
-    var output;
-    if (a < b) {
-        output = b;
+    result.innerHTML = b;
+    // var output;
+    // if (a < b) {
+    //     output = b;
 
-    }
-    else {
-        output = a;
-    }
-    result.innerHTML = output;
-    return output;
+    // }
+    // else {
+    //     output = a;
+    // }
+    
+    // return output;
+    return this;
 }
 
 

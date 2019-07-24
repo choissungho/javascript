@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script>
+        function goMoving() {
+            window.history.back();
+        }    
+    </script>
+
+</head>
+
+<body>
+    <p id="demo"></p>
+    <button onclick="goMoving()">클릭</button>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Screen height is " + screen.height + ", Screen width is " + screen.width;
+    </script>
+
+</body>
+
+</html>
