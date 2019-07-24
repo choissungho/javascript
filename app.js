@@ -73,6 +73,26 @@ router.get('/bj_function', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/bj_variable', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin_javascript/function.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/bj_arrays', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin_javascript/arrays.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/bj_object', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin_javascript/object.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/bj_keyword', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin_javascript/this.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 
 
 
