@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(function () {
+            $("input").focus(function () {
+                $(this).css("background-color", "grey");
+            });
+            $("input").focus(function () { // focus 후 표시
+                $(this).css("background-color", "green");
+            });
+        });
+    </script>
+    Name: <input type="text" name="fullname"><br>
+</body>
+
+</html>

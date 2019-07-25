@@ -47,12 +47,12 @@ router.get('/bj_switch', function (req, res) {
 });
 
 
-router.get('/bj_string1', function (req, res) {
+router.get('/bj_string01', function (req, res) {
     res.sendFile(path.join(__dirname + '/beomjin_javascript/string01.html'));
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/bj_string2', function (req, res) {
+router.get('/bj_string02', function (req, res) {
     res.sendFile(path.join(__dirname + '/beomjin_javascript/string02.html'));
     //__dirname : It will resolve to your project folder.
 });
@@ -68,7 +68,7 @@ router.get('/bj_structure', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/bj_function', function (req, res) {
+router.get('/bj_call_with_function', function (req, res) {
     res.sendFile(path.join(__dirname + '/beomjin_javascript/function.html'));
     //__dirname : It will resolve to your project folder.
 });
@@ -92,6 +92,12 @@ router.get('/bj_keyword', function (req, res) {
     res.sendFile(path.join(__dirname + '/beomjin_javascript/this.html'));
     //__dirname : It will resolve to your project folder.
 });
+
+router.get('/bj_cookies', function (req, res) {
+    res.sendFile(path.join(__dirname + '/beomjin_javascript/cookies.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 
 
 
