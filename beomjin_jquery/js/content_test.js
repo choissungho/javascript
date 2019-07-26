@@ -8,7 +8,7 @@ $(function () {
     $("#add_bt").click(function () {
         $("<span>" + $("#sentence2").html() + "</span>").appendTo("#sentence1");
     });
-});
+}); 
 
 $(function () {
     $("#bt1").click(function () {
