@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).on('keypress',function(event){
+            if(event.which == 13) {
+                alert('You pressed enter!');
+            }
+        });
+        $().ready(function(){
+            $('#textbox').keyup(function(event){
+                $('#msg-keyup').html('keyup() is triggered!, keyCode = ' + event.keyCode)
+            });
+            $('#textbox').keydown(function(event){
+                $('#msg-keydown').html('keydown() is triggered!, keyCode =' + event.keyCode)
+            });
+        });
+    </script>
+</head>
+
+<body>
+        Enter text:<input id="textbox" type="text">
+        <p>keyup() event:<span id="msg-keyup"></span></p>
+        <p>keydown() event:<span id="msg-keydown"></span></p>
+</body>
+
+</html>

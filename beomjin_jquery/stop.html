@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideDown(5000);
+            });
+            $("#stop").click(function () { $("#panel").stop(); });
+        });
+    </script>
+    <style>
+        #panel,
+        #flip {
+            background: #98bf21;
+            padding: 5px;
+            font-size: 18px;
+            text-align: center;
+            color: white;
+            border: solid 1px #666;
+            border-radius: 3px;
+
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="stop">Stop Animation</button>
+    <div id="flip">HELLO</div>
+    <div id="panel">HELLO</div>
+</body>
+
+</html>

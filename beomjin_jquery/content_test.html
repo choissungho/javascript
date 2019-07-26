@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/content_test.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container align-middle">
+        <button class="btn btn-outline-primary" id="remove_bt">삭제</button>
+        <button class="btn btn-outline-primary" id="create_bt">생성</button>
+        <button class="btn btn-outline-primary" id="add_bt">붙여넣기</button>
+        <p id="sentence1"><b>Note:</b> Click the above buttons to set the value of following input box.</p>
+        <p id="sentence2"><b>Note:</b> Click the above buttons to set the value of following input box.</p>
+
+
+        <div class="bg-light">
+            <div>
+                <p>Name: <input type="text" name="name_input" id="name_input"></p>
+                <p>Comments:<p>
+                        <p><textarea type="text" name="comment_input" rows="5" cols="20" id="comment_input"></textarea>
+                        </p>
+                        City:
+                        <select name="select_input" id="select_input">
+                            <option>Paris</option>
+                            <option>Seoul</option>
+                            <option>London</option>
+                            <option>Berlin</option>
+                        </select>
+            </div>
+
+            <button class="btn btn-outline-secondary" id="bt1">Get Name</button>
+            <button class="btn btn-outline-secondary" id="bt2">Get Comment</button>
+            <button class="btn btn-outline-secondary" id="bt3">Get City</button>
+
+            <p>결과값: <span id="output"></span></p>
+
+        </div>
+
+
+        <div class="form-group form-check">
+            <input name="check" type="checkbox" data-type="check" class="form-check-input" id="check">
+            <label class="form-check-label" for="exampleCheck1">Ariduino</label>
+        </div>
+
+        <div class="form-group form-check">
+            <input name="check" type="checkbox" class="form-check-input" id="check">
+            <label class="form-check-label" for="exampleCheck1">Android</label>
+        </div>
+
+        <div class="form-group form-check">
+            <input name="check" type="checkbox" class="form-check-input" id="check">
+            <label class="form-check-label" for="exampleCheck1">AI</label>
+        </div>
+
+        <div class="form-group form-check">
+            <input name="check" type="checkbox" class="form-check-input" id="check">
+            <label class="form-check-label" for="exampleCheck1">Big Data</label>
+        </div>
+
+        <button class="btn btn-outline-secondary" id="check_submit">All Check Toggle</button>
+
+
+    </div>
+</body>
+
+</html>

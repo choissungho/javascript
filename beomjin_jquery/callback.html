@@ -1,0 +1,27 @@
+<html>
+
+<head>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <script>
+        $(function () {
+            $("button").click(function () {
+                $("p").hide("slow", function () {
+                    alert("Example with Callback");
+                });
+            });
+            $("h1").click(function () {
+                $("p").show(1000);
+                alert("Example without Callback");
+            });
+        });
+    </script>
+    <button>Hide</button>
+    <p>This is a paragraph with little content.</p>
+    <h1>Here Click</h1>
+</body>
+
+</html>
