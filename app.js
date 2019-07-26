@@ -174,6 +174,11 @@ router.get('/sh_keyword', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/sh_bom_cookies', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0724/07_bom_cookies.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 
 
 
