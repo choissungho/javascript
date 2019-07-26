@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script>
+    $(function() {
+        $("#btn1").click(function(){ $("#test1").text("Hello world!");});
+        $("#btn2").click(function(){ $("#test2").html("<b>Hello world!</b>");});
+        $("#btn3").click(function(){ $("#test3").val("Dolly Duck");});
+        $("#lab").click(function(){
+            $("#yojulab").attr("https://www.yojulab.com");});
+    });
+</script>
+</head>
+
+<body>
+    <p id="test1">This is a paragraph.</p>
+    <p id="test2">This is a paragraph.</p>
+<p>Name: <input type="text" id="test3" value="Mickey Mouse"></p>
+<button id="btn1">Show Text</button><button id="btn2">Show HTML</button>
+<button id="btn3">Show Values</button>
+<button id="lab">Show Values</button>
+<p><a href="https://www.yojulab.com" id="yojulab">yojulab.com</a></p>
+<p id="p1"></p>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $("button").click(function () {
+                $("#yoju").attr({
+                    "href": "www.yojulab.com/jquery",
+                    "title": "jQuery Tutorial"
+                });
+            });
+            $("#button1").click(function () {
+                $("p").remove();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p><a href="www.google.com" title="some" id="yoju">Yojulab.com</a></p>
+    <button>Change href and title</button>
+    <button id=”button1”>Remove div element</button>
+</body>
+
+</html>

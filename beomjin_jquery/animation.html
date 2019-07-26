@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var div = $("div");
+                div.animate({ left: '150px' }, "slow");
+                div.animate({ fontSize: '3em' }, "slow");
+                div.animate({ fontWeight: 'Italic' }, "slow");
+            });
+        });
+    </script>
+    <style>
+        div {
+            background: #98bf21;
+            height: 100px;
+            width: 200px;
+            position: absolute;
+
+        }
+    </style>
+</head>
+
+<body>
+    <button>Start Animation</button>
+    <div>HELLO</div>
+</body>
+
+</html>

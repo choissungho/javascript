@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script>
+    $(function() {
+        $("#btn1").click(function(){ document.getElementById("p1").innerHTML = $("#test").text();});
+        $("#btn2").click(function(){ document.getElementById("p1").innerHTML = $("#test").html();});
+        $("#btn3").click(function(){ document.getElementById("p1").innerHTML = $("#test01").val();});
+        $("#lab").click(function(){
+            alert("Attribute: " + $("#yojulab").attr("href"));
+        });
+    });
+</script>
+</head>
+
+<body>
+    <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+<button id="btn1">Show Text</button><button id="btn2">Show HTML</button>
+<p>Name: <input type="text" id="test01" value="Mickey Mouse"></p>
+<button id="btn3">Show Values</button> → add button for ‘lab’
+<p><a href="https://www.yojulab.com" id="yojulab">yojulab.com</a></p>
+<p id="p1"></p>
+</body>
+
+</html>
