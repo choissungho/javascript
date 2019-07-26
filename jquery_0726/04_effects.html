@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideDown(5000);
+            });
+            $("#stop").click(function () { $("#panel").stop(); });
+        });
+    </script>
+    <style>
+        #panel,#stop,
+        #flip {
+            padding: 5px;
+            font-size: 18px;
+            text-align: center;
+            background-color: #555;
+            color: white;
+            border: solid 1px #666;
+            border-radius: 3px;
+
+        }
+
+        #panel {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card" style="width: 18rem;">
+        <img src="ka.jpg" id="panel" class="card-img-top" width="200px" height="150px">
+        <div class="card-body ">
+            <p class="card-text container">With supporting text below as acontent.</p>
+        </div>
+    </div>
+    <div>
+        <button id="flip">Start sliding</button>
+        <button id="stop">Stop sliding</button>
+    </div>
+</body>
+
+
+
+</html>
