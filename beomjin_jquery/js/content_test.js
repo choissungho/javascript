@@ -26,13 +26,13 @@ $(function () {
 
 $(function () {
     $("#check_submit").click(function () {
-        if($( "input:checked" ).length == 0){
+        if ($("input:checked").length == 0) {
             $("input[type=checkbox]").prop("checked", true);
-        }else {
-            $("input[type=checkbox]").prop("checked",false);
+        } else {
+            $("input[type=checkbox]").prop("checked", false);
         }
-        
-        
+
+
     });
 
 });
