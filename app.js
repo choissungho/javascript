@@ -174,10 +174,149 @@ router.get('/sh_keyword', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/sh_event', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0723/08_event.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_onsubmit', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0723/09_onsubmit.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_test', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0723/test.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_function', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0724/01_function.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_error', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0724/03_error.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_bom_window', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0724/04_bom_window.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_bom_etc', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0724/05_bom_etc.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_bom_geolocation', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0724/06_bom_geolocation.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
 router.get('/sh_bom_cookies', function (req, res) {
     res.sendFile(path.join(__dirname + '/sungho_0724/07_bom_cookies.html'));
     //__dirname : It will resolve to your project folder.
 });
+
+router.get('/sh_cookies_login', function (req, res) {
+    res.sendFile(path.join(__dirname + '/sungho_0724/08_cookies_login.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_jaquery_test', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0725/01_jaquery.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_syntax', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0725/02_syntax.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_misc', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0725/03_misc.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_event_focus', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0725/04_event_focus.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_event_on', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0725/05_event_on.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_event_key', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0725/06_event_key.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_callback', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0725/07_callback.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_effects_fade', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0725/08_effects_fade.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_callback', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0725/09_callback.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_effects_slide', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0726/01_effects_slide.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_effecst_animate', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0726/02_effecst_animate.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_effects_stop', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0726/03_effects_stop.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_effects', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0726/04_effects.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_content_get', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0726/05_content_get.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_content_set', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0726/06_content_set.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_content_test', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0726/07_content_test.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_content_add_remove', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0726/08_content_add_remove.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/sh_content_css', function (req, res) {
+    res.sendFile(path.join(__dirname + '/jquery_0726/09_content_css.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
+
+
 
 
 
